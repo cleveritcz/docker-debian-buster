@@ -8,7 +8,7 @@ RUN apt-get update \
     && apt-get -y full-upgrade \
     && apt-get install -y --no-install-recommends \
        sudo systemd systemd-sysv apt-utils \
-       ansible nano curl \
+       python-pip python-setuptools ansible nano curl \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/* \    
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
